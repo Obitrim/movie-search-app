@@ -1,0 +1,43 @@
+.LoaderWrapper {
+	height: 45vh;
+	display: grid;
+	place-items: center;
+}
+
+.LoaderWrapper__Loader {
+	border: 3px;
+	position: relative;
+	padding-left: 35px;
+}/*
+
+.LoaderWrapper__Loader::before {
+	content: "";
+
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: var(--secondary);
+	animation: bounce 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	0%{
+		transform: translateX(0rem);
+	}
+
+	50% {
+		transform: translateX(-3rem;);
+	}
+
+	100%{
+		transform: translateX(0rem);
+	}
+}
+*/

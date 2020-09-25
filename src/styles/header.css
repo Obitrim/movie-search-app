@@ -1,0 +1,16 @@
+.c-header {
+	height: var(--header-h);
+	background-color: var(--primary);
+}
+
+.c-header--center-items {
+	display: grid;
+	place-items: center;
+}
+
+.c-header__title {
+	font-size: 26px;
+	margin: 0;
+	color: var(--secondary);
+	text-transform: uppercase;
+}
