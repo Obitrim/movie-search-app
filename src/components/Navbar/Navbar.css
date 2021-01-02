@@ -1,0 +1,23 @@
+.Navbar {
+	
+}
+
+.NavLink {
+	text-decoration: none;
+	color: var(--light);
+
+	display: inline-block;
+	padding: 0.5em;
+}
+
+.NavLink + .NavLink {
+	margin-left: 1em;
+}
+
+.NavLink:hover {
+	opacity: 0.8;
+}
+
+.NavLink--Active {
+	color: var(--primary);
+}

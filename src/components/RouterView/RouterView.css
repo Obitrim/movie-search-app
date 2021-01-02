@@ -1,0 +1,6 @@
+.RouterView {
+	max-width: var(--desktop-breakpoint);
+	margin: 0 auto;
+	padding: 0 1em;
+	margin-top: var(--header-h);
+}

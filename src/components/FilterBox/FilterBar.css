@@ -1,0 +1,23 @@
+.FilterBar__Btn {
+	all: initial;
+	padding: 0.4em 1em;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.7);
+	font-family: inherit;
+
+	border-radius: var(--b-radius);
+}
+
+.FilterBar__Btn:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.FilterBar__Btn--Active {
+	color: var(--light);
+	background-color: var(--primary);
+}
+
+.FilterBar__Btn + .FilterBar__Btn {
+	margin-left: 1em;
+}
