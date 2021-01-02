@@ -1,0 +1,86 @@
+.Home__IntroText {
+	padding: 5em 0;
+	text-align: center;
+}
+
+.Home__IntroText__Heading {
+	font-size: calc(var(--font-size) * 4);
+}
+
+.Home__IntroText__Text {
+	margin: 1em 0 2em;
+}
+
+.Home__IntroText__CallToAction {
+	all: initial;
+	padding: 0.5em 2em;
+	border-radius: 5em;
+	background-color: var(--primary);
+
+	font-family: inherit;
+	color: var(--light);
+	font-size: calc(var(--font-size) + 2px);
+}
+
+.Home__IntroText__CallToAction:hover {
+	cursor: pointer;
+}
+
+.Home__Banner {
+	margin: 3em 0;
+}
+
+.Home__Banner__Inner {
+	height: 40vh;
+	overflow-x: hidden;
+
+	position: relative;
+}
+
+.Home__PopularHeading {
+	margin-bottom: 1em;
+}
+
+.Banner__Slides {
+	display: flex;
+	width: 400%;
+	height: 100%;
+	transition: margin-left 0.25s ease-in-out;
+}
+
+.BannerImg {
+	display: block;
+	flex: 1;
+	height: 100%;
+	border-radius: var(--b-radius);
+	box-shadow:  4px 4px 20px rgba(0, 0, 0, 0.4);
+	object-fit: cover;
+}
+
+.MovieDetails {
+	position: absolute;
+	bottom: 0em;
+	left: 0em;
+
+	width: 100%;
+	padding: 2em;
+	background: linear-gradient(to top, var(--dark), transparent);
+}
+
+.MovieDetails p {
+	max-width: 450px;
+	line-height: 150%;
+	margin: 1em 0;
+}
+
+.ControlBtns {
+	position: absolute;
+	bottom: 2em;
+	right: 2em;
+}
+
+@media (min-width: 576px) {
+	.Home__Banner__Inner {
+		height: 370px;
+	}
+}
