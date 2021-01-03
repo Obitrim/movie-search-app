@@ -1,0 +1,20 @@
+.SearchBox__Input {
+	border: none;
+	background-color: var(--darker);
+	padding: 0.5em 1em;
+	width: 360px;
+
+	font-size: var(--font-size);
+	text-align: center;
+	color: rgba(255, 255, 255, 0.6);
+	border-radius: var(--b-radius);
+
+	/*container*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.SearchBox__Input:focus {
+	text-align: left;
+	outline: none;
+}
