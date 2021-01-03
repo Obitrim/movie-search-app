@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 import './Home.css';
 import moanaImg from './moana.jpg';
@@ -35,19 +37,18 @@ const Index = (props) => {
 	    		<div className="MovieDetails">
 	    			<h2>Movie Title</h2>
 	    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus expedita quaerat ut dignissimos cupiditate.</p>
-	    			<a href="#">Full Details</a>
+	    			<a href="#" className="MovieDetails__Btn">Full Details</a>
 	    		</div>
 	    		<div className="ControlBtns">
-	    			<button type="button" onClick={nextSlide(-1)} disabled={slideIndex === 0}>
-	    				prev
+	    			<button type="button" className="ControlBtns__Btn ControlBtns__Btn--Prev" onClick={nextSlide(-1)} disabled={slideIndex === 0}>
+	    				<ChevronLeftIcon/>
 	    			</button>
-	    			<button onClick={nextSlide()} disabled={slideIndex === 3}>
-	    				next
+	    			<button type="button" className="ControlBtns__Btn" onClick={nextSlide()} disabled={slideIndex === 3}>
+	    				<ChevronRightIcon/>
 	    			</button>
 	    		</div>
     		</div>
     	</section>
-    	<section data-aos="slide-in-up" data-aos-anchor-placement="center-bottom">Banner</section>
     </>
   )
 }
