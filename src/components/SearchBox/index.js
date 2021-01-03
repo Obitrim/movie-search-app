@@ -1,8 +1,9 @@
 import React from 'react';
+import './SearchBox.css';
 
 const Index = (props) => {
   return (
-    <div>SearchBox</div>
+    <input type="text" className="SearchBox__Input" placeholder="Search for by title"/>
   )
 }
 
