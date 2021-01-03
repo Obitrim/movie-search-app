@@ -1,12 +1,22 @@
 .Navbar {
-	
+	position: fixed;
+	bottom: 0;
+	background-color: var(--dark);
+	z-index: 9999;
+
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
 }
 
 .NavLink {
 	text-decoration: none;
 	color: var(--light);
+	font-size: calc(var(--font-size) - 2px);
 
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 0.5em;
 }
 
@@ -20,4 +30,29 @@
 
 .NavLink--Active {
 	color: var(--primary);
+}
+
+.NavLink--Profile {
+	transform: translateY(0.4em);
+}
+
+.NavLink--Profile i {
+	color: inherit;
+}
+
+@media (min-width: 920px) {
+	.Navbar {
+		position: static;
+		display: block;
+		width: auto;
+	}
+
+	.NavLink {
+		font-size: var(--font-size);
+		display: inline-block;
+	}
+
+	.NavLink:not(.NavLink--Profile) svg{
+		display: none !important;
+	}
 }
