@@ -4,8 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import './RouterView.css';
 import HomeView from '../../views/Home';
 import ProfileView from '../../views/Profile';
-import SearchView from '../../views/Search';
-import FavoriteView from '../../views/Favorite';
+import FavoriteView from '../../views/Favorites';
 
 const Index = (props) => {
   return (
@@ -13,7 +12,6 @@ const Index = (props) => {
     	<Switch>
     		<Route path="/" component={HomeView} exact/>
     		<Route path="/favorite" component={FavoriteView}/>
-    		<Route path="/search" component={SearchView}/>
     		<Route path="/profile" component={ProfileView}/>
     	</Switch>
     </main>
